@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Chatbot</title>
+
+    <link rel="stylesheet" href="AI.CSS">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+
+            <div class="bot-details">
+                <div class="bot-icon">🤖</div>
+
+                <div>
+                    <h2>AI Assistant</h2>
+                    <p>
+                        <span class="online-dot"></span>
+                        Online
+                    </p>
+                </div>
+            </div>
+
+            <button id="clearChat">🗑️</button>
+
+        </div>
+
+
+        <!-- Chat Area -->
+        <div class="chat-box" id="chatBox">
+
+            <!-- Bot Welcome Message -->
+            <div class="message bot-message">
+
+                <div class="avatar">
+                    🤖
+                </div>
+
+                <div class="message-text">
+                    <p>
+                        Hello! 👋
+                    </p>
+
+                    <p>
+                        I'm your AI Assistant. How can I help you today?
+                    </p>
+
+                    <span class="time">Just now</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Typing -->
+        <div class="typing" id="typing">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            AI is typing...
+
+        </div>
+
+
+        <!-- Input -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+            >
+
+            <button id="sendButton">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="AI.js"></script>
+
+</body>
+
+</html>
