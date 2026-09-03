@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Ordering App</title>
+
+    <link rel="stylesheet" href="food.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>🍔 Foodie</h1>
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food..."
+            >
+
+            <button id="cartButton">
+                🛒 Cart
+                <span id="cartCount">0</span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h2>Delicious Food Delivered To You 🍕</h2>
+
+        <p>
+            Order your favorite food anytime, anywhere.
+        </p>
+
+        <button id="orderNow">
+            Order Now
+        </button>
+
+    </section>
+
+
+    <!-- Food Menu -->
+
+    <section class="menu">
+
+        <h2>Our Menu</h2>
+
+        <!-- Categories -->
+
+        <div class="categories">
+
+            <button class="category active" data-category="All">
+                All
+            </button>
+
+            <button class="category" data-category="Pizza">
+                🍕 Pizza
+            </button>
+
+            <button class="category" data-category="Burger">
+                🍔 Burger
+            </button>
+
+            <button class="category" data-category="Biryani">
+                🍛 Biryani
+            </button>
+
+            <button class="category" data-category="Dessert">
+                🍰 Dessert
+            </button>
+
+        </div>
+
+
+        <!-- Food Cards -->
+
+        <div
+            class="food-container"
+            id="foodContainer"
+        >
+
+        </div>
+
+    </section>
+
+
+    <!-- Cart -->
+
+    <div class="cart" id="cart">
+
+        <div class="cart-header">
+
+            <h2>🛒 Your Cart</h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div
+            id="cartItems"
+            class="cart-items"
+        >
+
+        </div>
+
+
+        <div class="cart-bottom">
+
+            <h3>
+                Total:
+                <span id="cartTotal">
+                    ₹0
+                </span>
+            </h3>
+
+            <button id="checkout">
+                Place Order
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="food.js"></script>
+
+</body>
+
+</html>
